@@ -141,7 +141,7 @@ fetch(`${API}/trips/61467fea-8722-409e-bc3e-9e02d57e0d86`, {
 }
 
 ```
-```
+
 ## DELETE /trips/:tripId
 
 ### Request:
