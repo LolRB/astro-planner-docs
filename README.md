@@ -465,11 +465,7 @@ fetch(`${API}/users/token`, {
 ### Request:
 
 ```js
-fetch(`${API}/profile`, {
-    method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-},
+fetch(`${API}/profile)
 ```
 
 ### Response:
