@@ -460,3 +460,37 @@ fetch(`${API}/users/token`, {
   }
 }
 ```
+## GET /profile
+
+### Request:
+
+```js
+fetch(`${API}/profile`, {
+    method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+},
+```
+
+### Response:
+
+```js
+
+   {
+    "success": true,
+    "profile": [
+      {
+        "id": "35bf6fe0-56c2-4d33-a254-c6ae6767209b",
+        "userId": "b700b2ac-4ff0-4ccd-a7c9-411903282f77",
+        "picture": null,
+        "firstName": "Ro",
+        "lastName": "B",
+        "email": "test@test.com",
+        "location": null,
+        "dob": null,
+        "gender": "FLuid"
+      }
+    ]
+  }
+}
+```
