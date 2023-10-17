@@ -533,3 +533,46 @@ fetch(`${API}/profile/47fd8ab5-87da-4858-bdb0-6b724b49f096`, {
   }
 }
 ```
+## POST /profile
+
+### Request:
+
+```js
+fetch(`${API}/profile`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization:
+      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2vySWQiOiIzYjExZDIzMy1mZTE0LTQ2NzgtYjAwMC03YzJkNTFkYmE3MWEiLCJpYXQiOjE2OTQ1MjE5Nzl9.6qiWcCWgOA3Wvie8pjimOs1j8irhOQy6WfdVUNhUhkU',
+  },
+  body: JSON.stringify({
+  "firstName": "Luis",
+  "lastName": "Martinez",
+  "email": "test1@test.com",
+  "picture": null, //optional
+  "location": "Toronto", //optional
+  "dob": null, //optional
+  "gender": "Binary" //optional
+  }),
+});
+```
+
+### Response:
+
+```js
+{
+  "success": true,
+  "updatedProfile": {
+    "id": "47fd8ab5-87da-4858-bdb0-6b724b49f096",
+    "userId": "85d0527e-2373-423d-8ebf-ae853c5f07a6",
+    "picture": null,
+    "firstName": "Luis",
+    "lastName": "Martinez",
+    "email": "test1@test.com",
+    "location": "Toronto",
+    "dob": null,
+    "gender": "Binary"
+  }
+}
+
+```
