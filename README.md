@@ -465,7 +465,7 @@ fetch(`${API}/users/token`, {
 ### Request:
 
 ```js
-fetch(`${API}/profile)
+fetch(`${API}/profile`)
 ```
 
 ### Response:
@@ -520,7 +520,7 @@ fetch(`${API}/profile/47fd8ab5-87da-4858-bdb0-6b724b49f096`, {
 ```js
 {
   "success": true,
-  "profile": {
+  "updatedProfile": {
     "id": "47fd8ab5-87da-4858-bdb0-6b724b49f096",
     "userId": "85d0527e-2373-423d-8ebf-ae853c5f07a6",
     "picture": null,
