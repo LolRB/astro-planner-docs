@@ -494,3 +494,46 @@ fetch(`${API}/profile`, {
   }
 }
 ```
+
+## PUT /profile/:profileId
+
+### Request:
+
+```js
+fetch(`${API}/trips/61467fea-8722-409e-bc3e-9e02d57e0d86`, {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization:
+      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzYjExZDIzMy1mZTE0LTQ2NzgtYjAwMC03YzJkNTFkYmE3MWEiLCJpYXQiOjE2OTQ1MjE5Nzl9.6qiWcCWgOA3Wvie8pjimOs1j8irhOQy6WfdVUNhUhkU',
+  },
+  body: JSON.stringify({
+  "firstName": "Rodrigo",
+  "lastName": "Bueno",
+  "email": "test1@test.com",
+  "picture": null, //optional
+  "location": "Mexico City", //optional
+  "dob": null, //optional
+  "gender": "Fluid" //optional
+  }),
+});
+```
+
+### Response:
+
+```js
+{
+  "success": true,
+  "profile": {
+    "id": "47fd8ab5-87da-4858-bdb0-6b724b49f096",
+    "userId": "85d0527e-2373-423d-8ebf-ae853c5f07a6",
+    "picture": null,
+    "firstName": "Rodrigo",
+    "lastName": "Bueno",
+    "email": "test1@test.com",
+    "location": "Mexico City",
+    "dob": null,
+    "gender": "Fluid"
+  }
+}
+```
