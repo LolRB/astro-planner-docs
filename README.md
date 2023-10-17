@@ -500,7 +500,7 @@ fetch(`${API}/profile`, {
 ### Request:
 
 ```js
-fetch(`${API}/trips/61467fea-8722-409e-bc3e-9e02d57e0d86`, {
+fetch(`${API}/profile/47fd8ab5-87da-4858-bdb0-6b724b49f096`, {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json',
